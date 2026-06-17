@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layviiii | Our Culinary Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <span class="brand-name">Layviiii</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="index.html#why-us">Why Layviiii</a></li>
+                <li><a href="index.html#testimonials">Reviews</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+            <h1>Our Culinary Masterpieces</h1>
+            <p>Carefully crafted dishes designed to elevate your dining experience.</p>
+        </div>
+    </section>
+
+    <section class="menu-controls-section">
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="menu-search" placeholder="Search for your favorite dish...">
+        </div>
+
+        <div class="filter-categories">
+            <button class="filter-btn active" data-category="all">All Items</button>
+            <button class="filter-btn" data-category="fast-food">Fast Food</button>
+            <button class="filter-btn" data-category="bbq">BBQ</button>
+            <button class="filter-btn" data-category="pizza">Pizza</button>
+            <button class="filter-btn" data-category="burgers">Burgers</button>
+            <button class="filter-btn" data-category="drinks">Drinks</button>
+            <button class="filter-btn" data-category="desserts">Desserts</button>
+        </div>
+    </section>
+
+    <section class="menu-grid-section">
+        <div class="menu-grid" id="menu-items-container">
+            
+            <div class="menu-grid" id="menu-items-container">
+            
+            <!-- Food Card 1: Fast Food -->
+            <div class="food-card" data-category="fast-food">
+                <div class="food-img-container">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=500" alt="Loaded Nachos" class="food-img">
+                    <span class="category-badge">Fast Food</span>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-title-price">
+                        <h3>Loaded Tex-Mex Nachos</h3>
+                        <span class="food-price">Rs. 1,650</span>
+                    </div>
+                    <p class="food-description">Crispy tortilla chips smothered in melted queso, seasoned black beans, fresh jalapeños, and hand-mashed guacamole.</p>
+                </div>
+            </div>
+
+            <!-- Food Card 2: BBQ -->
+            <div class="food-card" data-category="bbq">
+                <div class="food-img-container">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=500" alt="Smoked Ribs" class="food-img">
+                    <span class="category-badge">BBQ</span>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-title-price">
+                        <h3>Slow-Smoked Beef Ribs</h3>
+                        <span class="food-price">Rs. 4,850</span>
+                    </div>
+                    <p class="food-description">12-hour wood-fired prime beef ribs glazed with our signature honey-infused hickory BBQ sauce.</p>
+                </div>
+            </div>
+
+            <!-- Food Card 3: Pizza -->
+            <div class="food-card" data-category="pizza">
+                <div class="food-img-container">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=500" alt="Truffle Pizza" class="food-img">
+                    <span class="category-badge">Pizza</span>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-title-price">
+                        <h3>Artisan Truffle Mushroom Pizza</h3>
+                        <span class="food-price">Rs. 2,450</span>
+                    </div>
+                    <p class="food-description">Neapolitan sourdough base topped with wild porcini mushrooms, fresh mozzarella, and premium white truffle oil glaze.</p>
+                </div>
+            </div>
+
+            <!-- Food Card 4: Burgers -->
+            <div class="food-card" data-category="burgers">
+                <div class="food-img-container">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=500" alt="Signature Burger" class="food-img">
+                    <span class="category-badge">Burgers</span>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-title-price">
+                        <h3>The Layviiii Crown Burger</h3>
+                        <span class="food-price">Rs. 2,250</span>
+                    </div>
+                    <p class="food-description">Premium Wagyu beef patty, sharp white cheddar, caramelized balsamic onions, and truffle aioli on a toasted brioche bun.</p>
+                </div>
+            </div>
+
+            <!-- Food Card 5: Drinks -->
+            <div class="food-card" data-category="drinks">
+                <div class="food-img-container">
+                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=500" alt="Smoked Mocktail" class="food-img">
+                    <span class="category-badge">Drinks</span>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-title-price">
+                        <h3>Smoked Rosemary Citrus Fizz</h3>
+                        <span class="food-price">Rs. 950</span>
+                    </div>
+                    <p class="food-description">Zero-proof refreshing blood orange and passionfruit juices infused with cold-smoked rosemary botanicals.</p>
+                </div>
+            </div>
+
+            <!-- Food Card 6: Desserts -->
+            <div class="food-card" data-category="desserts">
+                <div class="food-img-container">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=500" alt="Chocolate Lava Cake" class="food-img">
+                    <span class="category-badge">Desserts</span>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-title-price">
+                        <h3>Molten Lava Sphere</h3>
+                        <span class="food-price">Rs. 1,450</span>
+                    </div>
+                    <p class="food-description">Dark Belgian chocolate sphere filled with liquid warm fudge, accompanied by Tahitian vanilla bean gelato.</p>
+                </div>
+            </div>
+
+            <!-- Food Card 7: Fast Food -->
+            <div class="food-card" data-category="fast-food">
+                <div class="food-img-container">
+                    <img src="https://images.unsplash.com/photo-1562967914-608f82629710?q=80&w=500" alt="Chicken Tenders" class="food-img">
+                    <span class="category-badge">Fast Food</span>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-title-price">
+                        <h3>Buttermilk Crispy Tenders</h3>
+                        <span class="food-price">Rs. 1,350</span>
+                    </div>
+                    <p class="food-description">Golden, hand-breaded halal chicken tenders marinated in seasoned buttermilk, served with house honey mustard.</p>
+                </div>
+            </div>
+
+            <!-- Food Card 8: BBQ -->
+            <div class="food-card" data-category="bbq">
+                <div class="food-img-container">
+                    <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=500" alt="Beef Brisket" class="food-img">
+                    <span class="category-badge">BBQ</span>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-title-price">
+                        <h3>Smoked Beef Brisket Platter</h3>
+                        <span class="food-price">Rs. 3,850</span>
+                    </div>
+                    <p class="food-description">Melt-in-your-mouth slow-smoked halal beef brisket served with house pickles and apple cider vinegar slaw.</p>
+                </div>
+            </div>
+
+            <!-- Food Card 9: Pizza -->
+            <div class="food-card" data-category="pizza">
+                <div class="food-img-container">
+                    <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=500" alt="Pepperoni Pizza" class="food-img">
+                    <span class="category-badge">Pizza</span>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-title-price">
+                        <h3>Spicy Halal Pepperoni Pizza</h3>
+                        <span class="food-price">Rs. 2,150</span>
+                    </div>
+                    <p class="food-description">Premium halal beef pepperoni, crushed red pepper flakes, fresh basil, and a generous drizzle of organic hot honey.</p>
+                </div>
+            </div>
+
+            <!-- Food Card 10: Burgers -->
+            <div class="food-card" data-category="burgers">
+                <div class="food-img-container">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=500" alt="Crispy Chicken Burger" class="food-img">
+                    <span class="category-badge">Burgers</span>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-title-price">
+                        <h3>Zesty Avocado Chicken Burger</h3>
+                        <span class="food-price">Rs. 1,850</span>
+                    </div>
+                    <p class="food-description">Flame-grilled halal chicken breast, sliced avocado, swiss cheese, and a zesty cilantro-lime sauce.</p>
+                </div>
+            </div>
+
+            <!-- Food Card 11: Drinks -->
+            <div class="food-card" data-category="drinks">
+                <div class="food-img-container">
+                    <img src="https://images.unsplash.com/photo-1546173159-315724a31696?q=80&w=500" alt="Iced Latte" class="food-img">
+                    <span class="category-badge">Drinks</span>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-title-price">
+                        <h3>Spanish Iced Condensed Latte</h3>
+                        <span class="food-price">Rs. 850</span>
+                    </div>
+                    <p class="food-description">Rich espresso shots shaken over ice with fresh milk and a sweet swirl of premium Spanish condensed milk.</p>
+                </div>
+            </div>
+
+            <!-- Food Card 12: Desserts -->
+            <div class="food-card" data-category="desserts">
+                <div class="food-img-container">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=500" alt="Gourmet Donuts" class="food-img">
+                    <span class="category-badge">Desserts</span>
+                </div>
+                <div class="food-card-body">
+                    <div class="food-title-price">
+                        <h3>Glazed Churro Donut Ring</h3>
+                        <span class="food-price">Rs. 1,150</span>
+                    </div>
+                    <p class="food-description">Warm, cinnamon-sugar dusted donut ring served alongside a rich dark chocolate dipping ganache.</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="no-results-msg" style="display: none; text-align: center; font-size: 1.2rem; color: #888; margin-top: 40px; width: 100%;">
+            No dishes found matching your search. Try another query!
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Connect With Us</h3>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Gourmet Street, Food City</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (555) 019-2834</p>
+                <p><i class="fa-solid fa-envelope"></i> experience@layviiii.com</p>
+            </div>
+            <div class="footer-socials">
+                <h3>Follow Our Journey</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Layviiii. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const searchInput = document.getElementById('menu-search');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const foodCards = document.querySelectorAll('.food-card');
+        const noResultsMsg = document.getElementById('no-results-msg');
+
+        let activeCategory = 'all';
+        let searchQuery = '';
+
+        // Filter Function Execution
+        function applyFilters() {
+            let visibleCount = 0;
+
+            foodCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                const cardTitle = card.querySelector('.food-title-price h3').textContent.toLowerCase();
+                const cardDesc = card.querySelector('.food-description').textContent.toLowerCase();
+
+                const matchesCategory = (activeCategory === 'all' || cardCategory === activeCategory);
+                const matchesSearch = (cardTitle.includes(searchQuery) || cardDesc.includes(searchQuery));
+
+                if (matchesCategory && matchesSearch) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // If no cards match filters, display friendly notification text
+            noResultsMsg.style.display = (visibleCount === 0) ? 'block' : 'none';
+        }
+
+        // Category click event handler
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                // Change visually active button
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                e.target.classList.add('active');
+
+                activeCategory = e.target.getAttribute('data-category');
+                applyFilters();
+            });
+        });
+
+        // Search text input keyup event handler
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value.toLowerCase().trim();
+            applyFilters();
+        });
+    </script>
+</body>
+</html>
