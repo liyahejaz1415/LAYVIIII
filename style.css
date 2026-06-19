@@ -128,31 +128,89 @@ body {
     gap: 35px;
 }
 
-/* --- Featured Dishes --- */
+/* --- Featured Dishes (Enhanced Pop-Up Version) --- */
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+}
+
 .dish-card {
     background: #fff;
-    padding: 30px;
-    border-radius: 6px;
+    padding: 35px 25px;
+    border-radius: 16px; /* Smooth rounded premium look */
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+    
+    /* Advanced cubic-bezier gives it a snappy, organic pop-up transition */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     box-shadow: 0 4px 20px rgba(0,0,0,0.03);
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* The Core "Pop-Up" Hover State */
 .dish-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(197, 160, 89, 0.1);
+    transform: translateY(-12px) scale(1.03); /* Lifts and slightly enlarges */
+    border-color: #ff4757; /* Gives a fine accent border on hover */
+    box-shadow: 0 20px 40px rgba(255, 71, 87, 0.12); /* Casts a premium glow */
 }
 
+/* Animated Floating Emoji */
 .dish-img-placeholder {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* When the card pops up, make the emoji bounce and tilt! */
+.dish-card:hover .dish-img-placeholder {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Premium Accent Badges at the top of cards */
+.dish-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2f3542;
+    color: #fff;
+    padding: 4px 14px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: background 0.3s ease;
+}
+
+.dish-card:hover .dish-badge {
+    background: #ff4757; /* Changes badge color dynamically on hover */
+}
+
+/* Pricing Layout */
+.dish-price {
+    margin-top: 15px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ff4757;
 }
 
 .dish-card h3 {
-    margin-bottom: 12px;
+    margin: 10px 0;
     color: #1a1a1a;
     font-weight: 600;
+    font-size: 1.4rem;
 }
 
+.dish-card p {
+    color: #57606f;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
 /* --- Why Choose Us --- */
 .why-choose-us {
     background-color: #f6f4f0;
